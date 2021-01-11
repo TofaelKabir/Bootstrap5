@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>List Groups & Badges | Bootstrap 4</title>
+</head>
+<body>
+      <h1 class="display-3 text-center my-4">List Groups & Badges</h1>
+      <div class="container">
+        <!-- LIST GROUP = remove padding and margin -->
+        <!-- in ul = margin and padding is present by default -->
+        <ul>
+            <li>My List Item One</li>
+            <li>My List Item Two</li>
+            <li>My List Item Three</li>
+            <li>My List Item Four</li>
+            <li>My List Item Five</li>
+        </ul>
+        <br><br>
+
+        <ul class="list-group">
+          <!-- list-group-item-action can also be used here -->
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item">My List Item Two</li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
+        </ul>
+
+        <br><br>
+
+        <!-- LIST GROUP WITH LINKS -->
+
+        <ul>
+          <!-- use list-group class in ul tag and see the change -->
+            <a href="#">My List Item One</a>
+            <a href="#">My List Item Two</a>
+            <a href="#">My List Item Three</a>
+            <a href="#">My List Item Four</a>
+            <a href="#">My List Item Five</a>
+        </ul>
+
+        <br><br>
+
+        <ul class="list-group">
+          <!-- list-group-item-action = when scroll bar go to that field, it is highlighted,
+           list-group-item need to be there separately to form the column,
+           active - this makes a specific link active., but action feature still present.
+          -->
+            <a class=" list-group-item list-group-item-action active" href="#">My List Item One</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Two</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Three</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Four</a>
+            <a class="list-group-item list-group-item-action" href="#">My List Item Five</a>
+        </ul>
+
+        <br><br>
+
+
+
+        <!-- CONTEXTUAL CLASSES -->
+        <ul>
+            <li>My List Item One</li>
+            <li>My List Item Two</li>
+            <li>My List Item Three</li>
+            <li>My List Item Four</li>
+            <li>My List Item Five</li>
+        </ul>
+
+        <br><br>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-primary">My List Item One</li>
+            <li class="list-group-item list-group-item-action list-group-item-secondary">My List Item Two</li>
+            <li class="list-group-item list-group-item-action list-group-item-info">My List Item Three</li>
+            <li class="list-group-item list-group-item-action list-group-item-warning">My List Item Four</li>
+            <li class="list-group-item list-group-item-action list-group-item-danger">My List Item Five</li>
+        </ul>
+
+        <br><br>
+
+        <!-- LIST GROUP WITH BADGES -->
+        <ul>
+            <li>My List Item One</li>
+            <li>My List Item Two<span>23</span></li>
+            <li>My List Item Three<span>43</span></li>
+            <li>My List Item Four</li>
+            <li>My List Item Five</li>
+        </ul>
+
+        <br><br>
+        <!-- https://getbootstrap.com/docs/4.0/utilities/vertical-align/ -->
+        <ul class="list-group">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item">My List Item Two<span class="badge badge-warning align-top">23</span></li>
+            <li class="list-group-item">My List Item Three<span class="badge badge-primary align-bottom">43</span></li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
+        </ul>
+
+        <br><br>
+
+        <!-- CUSTOM CONTENT -->
+        <div>
+            <a href="#">
+                <div>
+                <h5>My Post One</h5>
+                <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By Moshiur</small>
+            </a>
+            <a href="#">
+                <div>
+                <h5>My Post Two</h5>
+                <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By Moshiur</small>
+            </a>
+            <a href="#">
+                <div>
+                <h5>My Post Three</h5>
+                <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By Moshiur</small>
+            </a>
+        </div>
+
+        <br><br>
+
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action active" href="#">
+                <!-- d-flex= make the 3 days ago as superscript -->
+                <div class="d-flex">
+                <h5>My Post One</h5>
+                <small>3 days ago</small>
+                </div>
+                <!-- mb-1=to put a margin below to close the gap -->
+                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By MTKS</small>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div>
+                <h5>My Post Two</h5>
+                <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By TKS</small>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div>
+                <h5>My Post Three</h5>
+                <small>3 days ago</small>
+                </div>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                <small>By KS</small>
+            </a>
+        </div>
+
+        <br><br>
+
+        <!-- BREADCRUMB -->
+
+        <ol>
+            <li>Home</li>
+        </ol>
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li>Users</li>
+        </ol>
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Users</a></li>
+            <li>Samuel</li>
+        </ol>
+
+        <br><br>
+        <!-- ol=ordered list -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Home</li>
+        </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Users</li>
+        </ol>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Users</a></li>
+            <li class="breadcrumb-item active">Gandi</li>
+        </ol>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
