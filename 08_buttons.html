@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Buttons | Bootstrap 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><title>Bootstrap 5</title>
+    <title>Bootstrap 5</title>
 </head>
 <body>
       <h2 class="display-4 text-center mb-5">Buttons & Button Groups</h2>
       <div class="container">
         <!--########################START HERE#########################-->
 
-        <!-- BUTTONS -->
+        <!-- Buttons from Regular HTML -->
 
         <button>Primary</button>
         <button>Secondary</button>
@@ -22,12 +22,11 @@
         <button>Warning</button>
         <button>Danger</button>
         <button>Link</button>
+        <br><hr style="border-top: 1px dashed blue">
 
-        <br><br>
-
-        <button type="button">NoBackgroound</button>
-        <button class="btn" type="button">NoBorder/Backgroound</button>
-        <button class="btn-primary" type="button">Border+Background</button>
+        <button type="button">ButtonByHTML</button>
+        <button class="btn" type="button">ButtonByBootstrap1</button>
+        <button class="btn-primary" type="button">ButtonByBootstrap2</button>
         <button class="btn btn-primary" type="button">Primary</button>
         <button class="btn btn-secondary" type="button">Secondary</button>
         <button class="btn btn-success" type="button">Success</button>
@@ -35,8 +34,7 @@
         <button class="btn btn-warning" type="button">Warning</button>
         <button class="btn btn-danger" type="button">Danger</button>
         <button class="btn btn-link" type="button">Link</button>
-
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- How many TAGS are used for button [a, button, input]-->
 
@@ -45,8 +43,7 @@
         <input class="btn btn-warning" type="button" value="Input">
         <input class="btn btn-danger" type="button" value="Submit">
         <input class="btn btn-success" type="button" value="Reset">
-
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- OUTLINE BUTTONS -->
         <button class="btn btn-outline-primary" type="button">Primary</button>
@@ -55,18 +52,19 @@
         <button class="btn btn-outline-info" type="button">Info</button>
         <button class="btn btn-outline-warning" type="button">Warning</button>
         <button class="btn btn-outline-danger" type="button">Danger</button>
-
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- BUTTON SIZES -->
         <!-- insidde i tag, font awesome is used,see line 7, google it to getthe link. here envelope is seen -->
-        <button class="btn btn-primary btn-lg" type="button"><i class="fa fa-envelope"></i> Large button</button>
+        <button class="btn btn-primary btn-lg" type="button">Large button</button>
         <button class="btn btn-primary btn-sm" type="button">Small button</button>
-        <br><br>
+        <!-- No such size like md, xl, or xxl -->
+        <button class="btn btn-primary btn-lg" type="button"><i class="fa fa-envelope"></i> Large button</button>
+        <br><hr style="border-top: 1px dashed blue">
         <!-- block level button cover the whole line -->
         <button class="btn btn-primary btn-block" type="button">Block level button</button>
 
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- STATES -->
         <button class="btn btn-danger" type="button">Regular Button</button>
@@ -77,7 +75,7 @@
             Toggle State
         </button>
 
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- BUTTON DROPDOWNS -->
         <!-- because of data-toggle attribute the dropdown works,
@@ -95,7 +93,7 @@
             </div>
         </div>
 
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
         <!-- the change only should be in next tline, no where else -->
         <div class="dropup">
             <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
@@ -108,7 +106,7 @@
             </div>
         </div>
 
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- SPLIT DROPDOWNS -- need to know more-->
         <!-- sr-only class in line 118 helps to eliminate the button Toggle dropdown and mmake one button MY bUTTON.
@@ -130,7 +128,7 @@
             </div>
         </div>
 
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- BUTTON GROUPS, doesn't create space between button
               button toolbar make the corner more beautiful/separtae from other button -->
@@ -140,7 +138,7 @@
             <button class="btn btn-info" type="button">Right</button>
         </div>
 
-        <br></br>
+        <br><hr style="border-top: 1px dashed blue">
         <!-- is button toolbar is similar to btn-group?
               div make them in different line, but becuase of toolbar they come in one line
               also btn group in all div tag helps to come them together  -->
@@ -167,7 +165,7 @@
             </div>
         </div>
 
-        <br><br>
+        <br><hr style="border-top: 1px dashed blue">
 
         <div class="btn-group-vertical">
             <button class="btn btn-success mb-2" type="button">Top</button>
@@ -178,9 +176,6 @@
     </div><!-- ./container -->
     <div style="margin-top:500px;"></div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<title>Bootstrap 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><title>Bootstrap 5</title>
+    <title>Bootstrap 5</title>
 </head>
 <body>
 	    <div style="margin-top: 50px;"></div>
@@ -14,33 +14,91 @@
 
         <!-- TEXT COLORS -->
         <p class="text-primary">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="text-secondary">Etiam porta sem malesuada ultricies vehicula(#6c757d), secondary and muted same color</p>
         <p class="text-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         <p class="text-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
         <p class="text-warning">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         <p class="text-danger">Etiam porta sem malesuada magna mollis euismod.</p>
-        <p class="text-muted">Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <p class="text-white">Etiam porta sem malesuada ultricies vehicula.</p>
-        <p class="text-black">Etiam porta sem malesuada ultricies vehicula.</p>
+        <p class="text-muted">Donec ullamcorper nulla non metus auctor fringilla.(#6c757d)</p>
+        <p class="text-light bg-dark">.text-light</p>
+        <p class="text-dark">.text-dark</p>
+
+        <br><hr style="border-top: 1px dashed blue">
+
+        <h3>
+            Fancy display heading
+            <small class="text-muted">With faded secondary text</small>
+        </h3>
+
+        <br><hr style="border-top: 1px dashed blue">
+
+       <!-- Contextual text classes also work well on anchors with the provided hover and focus states. Note that the .text-white and .text-muted class has no link styling. -->
+       <p><a href="#" class="text-primary">Primary link</a></p>
+       <p><a href="#" class="text-secondary">Secondary link</a></p>
+       <p><a href="#" class="text-success">Success link</a></p>
+       <p><a href="#" class="text-danger">Danger link</a></p>
+       <p><a href="#" class="text-warning">Warning link</a></p>
+       <p><a href="#" class="text-info">Info link</a></p>
+       <p><a href="#" class="text-light bg-dark">Light link</a></p>
+       <p><a href="#" class="text-dark">Dark link</a></p>
+       <p><a href="#" class="text-muted">Muted link</a></p>
+       <p><a href="#" class="text-white bg-dark">White link</a></p>
+       <br><hr style="border-top: 1px dashed blue">
+
         <!-- BACKGROUND COLORS -->
         <div class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
-        <div class="bg-primary text-white">Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+        <br><hr style="border-top: 1px dashed blue">
+        <div class="bg-primary text-light">Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+        <br><hr style="border-top: 1px dashed blue">
         <div class="bg-info">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</div>
+        <br><hr style="border-top: 1px dashed blue">
         <div class="bg-success">Maecenas sed diam eget risus varius blandit sit amet non magna.</div>
+        <br><hr style="border-top: 1px dashed blue">
         <div class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</div>
+        <br><hr style="border-top: 1px dashed blue">
         <div class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</div>
+        <br><hr style="border-top: 1px dashed blue">
         <div class="bg-dark text-white">Cras mattis consectetur purus sit amet fermentum.</div>
+        <br><hr style="border-top: 1px dashed blue">
         <div class="bg-light">Cras mattis consectetur purus sit amet fermentum.</div>
+        <br><hr style="border-top: 1px dashed blue">
 
         <!-- INVISIBLE -->
-        <p>Hello</p>
+        <p>Hello is absent in below line</p>
         <p class="invisible">Hello</p>
         <p>Hello</p>
+
+
+        <br><hr style="border-top: 1px dashed blue">
+        <blockquote class="blockquote">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title (Italic)</cite></footer>
+        </blockquote>
+
+        <br><hr style="border-top: 1px dashed blue">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title (Italic)</cite></footer>
+        </blockquote>
+
+
+        <br><hr style="border-top: 1px dashed blue">
+        <blockquote class="blockquote text-right">
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title (Italic)</cite></footer>
+        </blockquote>
+
+
+
+        <br><hr style="border-top: 1px dashed blue">
+
+
+
+
 
     </div><!-- ./container -->
     <div style="margin-top:50px;"></div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

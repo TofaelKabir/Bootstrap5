@@ -4,23 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <title>Bootstrap 4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><title>Bootstrap 5</title>
+  <title>Bootstrap 5</title>
 </head>
 <body>
   <div style="margin-top:50px;"></div>
   <div class="container">
     <!--########################START HERE#########################-->
 
-    <!-- how to JUSTIFY the text-->
-    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius.</p>
+    <!-- how to JUSTIFY the text, first one not justified-->
+    <!-- not working, no more this class in bootstrap 5 -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio ores fugiat tenetur ea voluptas voluptatem odio odores fugiat tenetur ea voluptas voluptatem odio odores fugiat tenetur ea voluptas voluptatem odio ododit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius.</p>
+    <hr style="border-top: 1px dashed blue">
 
-    <br><br>
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio ores fugiat tenetur ea voluptas voluptatem odio odores fugiat tenetur ea voluptas voluptatem odio odores fugiat tenetur ea voluptas voluptatem odio ododit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius.</p>
+    <hr style="border-top: 1px dashed blue">
 
     <!-- how to do ALIGNMENT in text -->
-    <p class="text-left">Lorem ipsum dolor sit.</p>
+    <!-- no longer in 5 -->
+    <!-- <p class="text-left">Lorem ipsum dolor sit.</p>
     <p class="text-center">Lorem ipsum dolor sit.</p>
     <p class="text-right">Lorem ipsum dolor sit.</p>
+    <hr style="border-top: 1px dashed blue"> -->
+
+    <!-- how to do ALIGNMENT in text -->
+    <p class="text-start">Lorem ipsum dolor sit.</p>
+    <p class="text-center">Lorem ipsum dolor sit.</p>
+    <p class="text-end">Lorem ipsum dolor sit.</p>
+    <hr style="border-top: 1px dashed blue">
 
     <!-- RESPONSIVE ALIGN -->
     <!-- sm represent small device which starts from 576 pixel. below 576 is for extra small device, this class will not work for them. FOR WINDOWN: SHIFT+CONTROL+M, FOR MAC, Shift+command+M should work to see responsiveness, otherwise inspect element and click on "toggle device toolbar" -->
@@ -32,28 +43,70 @@
     <p class="text-lg-right">Right aligned on large or larger</p>
     <!-- xl represent large device which starts from 1200 pixel. The below line will go right when pixel is 1200 or more-->
     <p class="text-xl-right">Right aligned on xl or larger</p>
+    <hr style="border-top: 1px dashed blue">
 
-    <hr>
+    <!-- RESPONSIVE ALIGN -->
+    <!-- sm represent small device which starts from 576 pixel. below 576 is for extra small device, this class will not work for them. FOR WINDOWN: SHIFT+CONTROL+M, FOR MAC, Shift+command+M should work to see responsiveness, otherwise inspect element and click on "toggle device toolbar" -->
+    <!-- The below line will go right when pixel is more than 576px -->
+    <p class="text-sm-end">Right aligned on small or larger</p>
+    <!-- md represent medium device which starts from 768 pixel. The below line will go right when pixel is 768 or more -->
+    <p class="text-md-end">Right aligned on medium or larger</p>
+    <!-- lg represent large device which starts from 992 pixel. The below line will go right when pixel is 992 or more -->
+    <p class="text-lg-end">Right aligned on large or larger</p>
+    <!-- xl represent large device which starts from 1200 pixel. The below line will go right when pixel is 1200 or more-->
+    <p class="text-xl-end">Right aligned on xl or larger</p>
+    <hr style="border-top: 1px dashed blue">
 
 
     <!-- to write class in all p in one command: mac --command + put cursor    for windows: control+select cursor-->
-
     <p class="text-sm-left">Left aligned text on small or larger</p>
     <p class="text-md-left">Left aligned text on medium or larger</p>
     <p class="text-lg-left">Left aligned text on large or wider</p>
     <p class="text-xl-left">Left aligned text on extra large or wider</p>
+    <hr style="border-top: 1px dashed blue">
 
-    <hr>
+    <!-- to write class in all p in one command: mac --command + put cursor    for windows: control+select cursor-->
+    <p class="text-sm-start">Left aligned text on small or larger</p>
+    <p class="text-md-start">Left aligned text on medium or larger</p>
+    <p class="text-lg-start">Left aligned text on large or wider</p>
+    <p class="text-xl-start">Left aligned text on extra large or wider</p>
+    <hr style="border-top: 1px dashed blue">
 
     <p class="text-sm-center">Center aligned text on small or larger</p>
     <p class="text-md-center">Center aligned text on medium or larger</p>
     <p class="text-lg-center">Center aligned text class="text--center" on large or wider</p>
     <p class="text-xl-center">Center aligned text on extra large or wider</p>
+    <hr style="border-top: 1px dashed blue">
 
-    <br><br>
+    <!-- Prevent text from wrapping with a .text-nowrap class. why this style is necessary? need to know -->
+    <div class="text-nowrap" style="width: 8rem;">
+      This text should overflow the parent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit,
+    </div>
+    <hr style="border-top: 1px dashed blue">
 
-    <!-- VERTICAL ALIGNMENT -->
+    <!-- text-truncate -->
+    <!-- Block level -->
+    <div class="row">
+      <div class="col-6 text-truncate">
+        Praeterea iter est quasdam res quas ex communi. This text should overflow the parent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit?
+      </div>
+    </div>
+    <hr style="border-top: 1px dashed blue">
+    <!-- Inline level -->
+    <span class="d-inline-block text-truncate" style="max-width: 500px;">
+      Praeterea iter est quasdam res quas ex communi.This text should overflow the parent. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit, dicta. Eaque reiciendis sed placeat omnis doloribus, corrupti eius. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ad deleniti, placeat cumque, maiores fugiat tenetur ea voluptas voluptatem odio odit,
+    </span>
+    <hr style="border-top: 1px dashed blue">
 
+
+
+
+
+
+
+
+    <!-- VERTICAL ALIGNMENT with table cells-->
+    <!-- later this topic -->
     <table style="height: 100px;">
         <tbody>
           <tr>
@@ -61,14 +114,21 @@
             <td class="align-middle">middle</td>
             <td class="align-bottom">bottom</td>
             <td class="align-baseline">baseline</td>
-            <!-- below 2 is confusing
-             https://getbootstrap.com/docs/4.0/utilities/vertical-align/
-            -->
             <td class="align-text-top">text-top</td>
             <td class="align-text-bottom">text-bottom</td>
           </tr>
         </tbody>
     </table>
+    <hr style="border-top: 1px dashed blue">
+
+    <!-- VERTICAL ALIGNMENT with inline elements-->
+    <span class="align-baseline">baseline</span>
+    <span class="align-top">top</span>
+    <span class="align-middle">middle</span>
+    <span class="align-bottom">bottom</span>
+    <span class="align-text-top">text-top</span>
+    <span class="align-text-bottom">text-bottom</span>
+    <hr style="border-top: 1px dashed blue">
 
     <!-- 1) TURN BLOCK TO INLINE
          2) header block the whole line, we can prove it by putting color
@@ -78,48 +138,46 @@
     <h1 class="bg-success">Goodbye</h1>
     <h1 class="d-inline bg-success">Hello</h1>
     <h1 class="d-inline bg-success">Goodbye</h1>
-    <hr>
+    <hr style="border-top: 1px dashed blue">
+    <!-- without background color -->
     <h1 class="d-inline">Hello</h1>
     <h1 class="d-inline">Goodbye</h1>
-    <br><br>
+    <hr style="border-top: 1px dashed blue">
 
     <!-- TURN INLINE TO BLOCK -->
-    <!-- <span>Block</span> -->
     <span class="bg-success">Block</span>
     <span class="d-block bg-success">Block</span>
-
-    <br><br>
+    <hr style="border-top: 1px dashed blue">
 
     <!-- INLINE BLOCK
         div also block the whole line   -->
     <div>
-      <h3>Hello</h3>
-      This is inline
+      <h3>Hello1</h3>
+      This is inline1
     </div>
     <div class="bg-success">
-      <h3>Hello</h3>
-      This is inline
+      <h3>Hello2</h3>
+      This is inline2
     </div>
     <div class="bg-primary">
-      <h3>Hello</h3>
-      This is inline
+      <h3>Hello3</h3>
+      This is inline3
     </div>
+    <hr style="border-top: 1px dashed blue">
+
     <!-- not d-block-inline, rather d-inline-block
     to keep 2 div block side by side-->
     <div class="d-inline-block bg-success">
-      <h3>Hello</h3>
-      This is inline
+      <h3>Hello4</h3>
+      This is inline4
     </div>
     <div class="d-inline-block bg-primary">
-      <h3>Hello</h3>
-      This is inline
+      <h3>Hello5</h3>
+      This is inline5
     </div>
   </div>
 
   <div style="margin-top:50px;"></div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
