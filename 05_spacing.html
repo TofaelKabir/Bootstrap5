@@ -19,7 +19,8 @@
         t - for classes that set margin-top or padding-top
         b - for classes that set margin-bottom or padding-bottom
 
-        Where size is one of: 1 rem = 16 px, so 0.25 rem = 4 px
+        Where size is one of: rem based on default size
+        if default is 16 px, it means 1 rem, so 0.25 rem = 4 px
 
         0 - for classes that eliminate the margin or padding by setting it to 0
         1 - (by default) for classes that set the margin or padding to $spacer * .25rem
@@ -38,7 +39,7 @@
         <h1 class="bg-success mb-5">Lorem ipsum.</h1>
         <hr style="border-top: 1px dashed blue">
 
-        <!-- without background color difficult to understand -->
+        <!-- without background color difficult to understand, FYI -->
         <h1 class="mb-4">Lorem ipsum.</h1>
         <h1 class="mb-2">Lorem ipsum.</h1>
         <hr style="border-top: 1px dashed blue">
@@ -73,7 +74,9 @@
         <p class="bg-success m-5">Lorem ipsum dolor sit amet, consectetur elit. Voluptatum, optio.</p>
         <hr style="border-top: 1px dashed blue">
         <!-- Additionally, Bootstrap also includes an .mx-auto class for horizontally centering fixed-width block level content—that is, content that has display: block and a width set—by setting the horizontal margins to auto. -->
-        <div class="mx-auto" style="width: 150px; background-color:red;">Centered element</div>
+        <div class="mx-auto" style="width: 150px; background-color:red;">
+          Centered element
+        </div>
         <hr style="border-top: 1px dashed blue">
 
         <!-- breakpoint abbreviation can be used for other property too -->

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><title>Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap 5</title>
 </head>
 <body>
@@ -53,16 +54,18 @@
             <button class="btn">Float End</button>
         </div>
         <hr>
+        <!-- By Bootstrap -->
         <div>
-            <button class="btn btn-secondary">Float Start</button>
-            <button class="btn btn-secondary">Float End</button>
+            <button class="btn btn-primary">Float Start</button>
+            <button class="btn btn-warning">Float End</button>
         </div>
         <hr>
         <div class="bg-success">
-            <button class="btn btn-secondary">Float Start</button>
-            <button class="btn btn-secondary">Float End</button>
+            <button class="btn btn-primary">Float Start</button>
+            <button class="btn btn-warning">Float End</button>
         </div>
         <hr>
+        <!-- A problem arise when we use float start and float end, see next code, use of clearfix -->
         <div class="bg-warning">
             <button class="btn btn-secondary float-start">Float Start</button>
             <button class="btn btn-secondary float-end">Float End</button>
@@ -72,26 +75,31 @@
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi. Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius esse fuga, repellat fugit harum quia nihil sit in debitis expedita. Eos, voluptates eum rem voluptatum tempore accusamus soluta enim, animi in voluptatibus aliquam distinctio totam repudiandae necessitatibus quidem consequatur incidunt aliquid ad! Inventore ratione, consequatur eligendi iusto esse iure officia praesentium magni in! Nemo tempora, voluptatem facilis reprehenderit minima reiciendis alias similique est rem debitis id expedita voluptatum porro fugiat magni inventore neque. </p>
         <hr style="border-top: 1px dashed blue">
-        
+
+        <!--  -->
         <div class="bg-info clearfix">
           <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+          <div class="ullah">
+
+          </div>
           <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
         </div>
         <hr style="border-top: 1px dashed blue">
 
         <!-- FIXED TOP -->
-        <!-- <h3 class="fixed-top">Position an element at the top of the viewport, from edge to edge.</h3> -->
+        <h3 class="fixed-top">Position an element at the top of the viewport, from edge to edge.</h3>
 
         <!-- FIXED BOTTOM -->
-        <!-- <h3 class="fixed-bottom">Position an element at the bottom of the viewport, from edge to edge.</h3> -->
+        <h3 class="fixed-bottom">Position an element at the bottom of the viewport, from edge to edge.</h3>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates molestiae aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi. Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius esse fuga, repellat fugit harum quia nihil sit in debitis expedita. Eos, voluptates eum rem voluptatum tempore accusamus soluta enim, animi in voluptatibus aliquam distinctio totam repudiandae necessitatibus quidem consequatur incidunt aliquid ad! Inventore ratione, consequatur eligendi iusto esse iure officia praesentium magni in! Nemo tempora, voluptatem facilis reprehenderit minima reiciendis alias similique est rem debitis id expedita voluptatum porro fugiat magni inventore neque. </p>
         <hr style="border-top: 1px dashed blue">
 
 
         <!-- FIXED STICKY -->
+        <!-- not working -->
         <h3 class="sticky-top">Position an element at the top of the viewport, from edge to edge, but only after you scroll past it. The .sticky-top utility uses CSS’s position: sticky, which isn’t fully supported in all browsers.</h3>
-
+        <!-- not working -->
         <hr style="border-top: 1px dashed blue">
         <div class="sticky-sm-top">Stick to the top on viewports sized SM (small) or wider</div>
         <div class="sticky-md-top">Stick to the top on viewports sized MD (medium) or wider</div>
