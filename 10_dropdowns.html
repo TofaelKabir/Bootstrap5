@@ -159,6 +159,7 @@
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown button
           </button>
+          <!-- dropdown-menu-dark: dark background -->
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item active" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -484,6 +485,7 @@
         </div>
         <br><hr style="border-top: 1px dashed blue">
 
+
         <!-- Headers: Add a header to label sections of actions in any dropdown menu. -->
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -587,13 +589,17 @@
         </div>
         <br><hr style="border-top: 1px dashed blue">
 
-        <!-- No idea about reference -->
+
+
+
+        <!-- No idea about reference , need to see-->
         <!-- Dropdown options: Use data-bs-offset or data-bs-reference to change the location of the dropdown. -->
-        <!-- offset make a difference from the button to output -->
+        <!-- offset make a space from the button to show the output -->
         <div class="d-flex">
-          <!-- me-1 make space between two button -->
+          <!-- me-1 make space between two button in x axis -->
           <div class="dropdown me-1">
-            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+            <!-- data-bs-offset="50,20", 50 in x axis, 20 in y axis -->
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="50,20">
               Offset
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
